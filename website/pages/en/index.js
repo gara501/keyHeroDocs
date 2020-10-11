@@ -64,9 +64,8 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href="#try">Juego</Button>
+            <Button href={docUrl('doc1.html')}>Github</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -109,7 +108,7 @@ class Index extends React.Component {
               'To make your landing page more attractive, use illustrations! Check out ' +
               '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
               'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+            image: `${baseUrl}img/undraw_gaming.svg`,
             imageAlign: 'left',
             title: 'Wonderful SVG Illustrations',
           },
@@ -119,29 +118,32 @@ class Index extends React.Component {
 
     const Description = () => (
       <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
+      {[
+        {
+          content:
+            'Context API? React Hooks? mira la documentación oficial ' +
+            '[**Documentación oficial de React**](https://es.reactjs.org/)  ',
+          image: `${baseUrl}img/undraw_react.svg`,
+          imageAlign: 'right',
+          title: 'Documentación oficial de React',
+        },
+      ]}
       </Block>
     );
 
     const LearnHow = () => (
       <Block background="light">
-        {[
-          {
-            content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
-            imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
-          },
-        ]}
+      {[
+        {
+          content:
+            'Aprender react haciendo juegos, ¿suena difícil? no lo es, con React podemos hacer juegos' +
+            'mientras aprendemos como usar este fantástico framework, en este tutorial, aprendermos a usar hooks y context API. ' +
+            've directamente al [**Tutorial**](/blog) para ver como hacerlo paso a paso.',
+          image: `${baseUrl}img/undraw_video_game_night.svg`,
+          imageAlign: 'left',
+          title: 'Tutorial - Creando un clon de Guitar Hero',
+        },
+      ]}
       </Block>
     );
 
@@ -182,8 +184,9 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
+          <h2>¿Quien Soy?</h2>
+          <p>Andres Ramirez, Ingeniero de Sistemas, desarrollador de software,
+          enamorado del desarrollo de videojuegos y la tecnología.</p>
           <div className="logos">{showcase}</div>
           <div className="more-users">
             <a className="button" href={pageUrl('users.html')}>
@@ -198,10 +201,7 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
           <LearnHow />
-          <TryOut />
           <Description />
           <Showcase />
         </div>
