@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'KeyHero', // Title for your website.
-  tagline: 'Creando juegos con react implementando hooks y Context API',
+  title: 'Aliens', // Title for your website.
+  tagline: 'Creando juegos con React - Context API',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -30,15 +30,15 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 'facebook',
+  projectName: 'KeyHero',
+  organizationName: 'Aramhack',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {href: 'https://www.youtube.com/watch?v=qWFScmtiC44&ab_channel=JonathanBlow', label: 'Juego'},
+    {href: 'https://aliensfb.netlify.app/', label: 'Juego'},
     {href: 'https://github.com/gara501/keyHero', label: 'Código'},
     {doc: 'doc1', label: 'Tutorial'},
   ],
@@ -47,8 +47,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/keyhero_logo.png',
-  footerIcon: 'img/favicon.png',
+  headerIcon: 'img/aliens.svg',
+  footerIcon: 'img/aliens.svg',
   favicon: 'img/favicon.png',
 
   /* Colors for website */
@@ -72,7 +72,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Ar4mhack`,
+  copyright: `Copyright © ${new Date().getFullYear()} Aramhack`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
