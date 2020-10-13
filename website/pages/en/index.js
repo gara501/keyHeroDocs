@@ -60,12 +60,12 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        <Logo img_src={`${baseUrl}img/undraw_game_world.svg`} />
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Juego</Button>
-            <Button href={docUrl('doc1.html')}>Github</Button>
+            <Button href="https://aliensfb.netlify.app/">Juego</Button>
+            <Button href={docUrl('doc1.html')}>Tutorial</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -136,12 +136,11 @@ class Index extends React.Component {
       {[
         {
           content:
-            'Aprender react haciendo juegos, ¿suena difícil? no lo es, con React podemos hacer juegos' +
-            'mientras aprendemos como usar este fantástico framework, en este tutorial, aprendermos a usar hooks y context API. ' +
-            've directamente al [**Tutorial**](/blog) para ver como hacerlo paso a paso.',
+            'Aprender react haciendo juegos, ¿suena difícil? no lo es, con React podemos hacer juegos ' +
+            'mientras aprendemos las diferentes funcionalidades que nos proporciona este fantástico framework. ',
           image: `${baseUrl}img/undraw_video_game_night.svg`,
           imageAlign: 'left',
-          title: 'Tutorial - Creando un clon de Guitar Hero',
+          title: 'Tutorial - Aliens, creando un juego usando Context API',
         },
       ]}
       </Block>

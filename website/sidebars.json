@@ -1,11 +1,8 @@
 {
   "docs": {
     "Instalación": ["doc1"],
-    "Contexto": ["doc2"],
+    "Context API": ["doc2"],
     "Componentes": ["doc3"],
-    "Acciones": ["doc4"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Lógica del juego": ["doc4"]
   }
 }

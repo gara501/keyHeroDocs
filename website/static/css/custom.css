@@ -48,3 +48,8 @@
 .more-users {
 	display: none;
 }
+
+.productShowcaseSection .logos img {
+	padding: 0;
+	width: 180px;
+}

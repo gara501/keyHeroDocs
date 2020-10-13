@@ -30,35 +30,22 @@ class Footer extends React.Component {
             )}
           </a>
           <div>
-            <h5>Docs</h5>
+            <h5>Tutorial</h5>
             <a href={this.docUrl('doc1.html')}>
-              Getting Started (or other categories)
+              Instalación
             </a>
-            <a href={this.docUrl('doc2.html')}>Guides (or other categories)</a>
+            <a href={this.docUrl('doc2.html')}>
+              Context Api
+            </a>
             <a href={this.docUrl('doc3.html')}>
-              API Reference (or other categories)
+              Componentes
             </a>
-          </div>
-          <div>
-            <h5>Community</h5>
-            <a href={`${this.props.config.baseUrl}users`}>User Showcase</a>
-            <a
-              href="https://stackoverflow.com/questions/tagged/"
-              target="_blank"
-              rel="noreferrer noopener">
-              Stack Overflow
-            </a>
-            <a href="https://discordapp.com/">Project Chat</a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noreferrer noopener">
-              Twitter
+            <a href={this.docUrl('doc4.html')}>
+              Lógica del juego
             </a>
           </div>
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
             <a href="https://github.com/">GitHub</a>
             <a
               className="github-button"
@@ -104,7 +91,6 @@ class Footer extends React.Component {
             src={`${this.props.config.baseUrl}img/aramhack_logo.png`}
             alt="Facebook Open Source"
             width="120"
-            height="45"
           />
         </a>
         <section className="copyright">{this.props.config.copyright}</section>
